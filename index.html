@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./mediaQueries.css">
+    <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src='./users.js' defer></script>
+
+    <title>Link Shortner</title>
+</head>
+
+<body>
+    <section class="userdetails">
+        <div class="userdetails-center">
+            <h3>Welcome<h3 id="uservalue"></h3>
+                <p class="typing-demo">Short your url here</p>
+        </div>
+        <div class="scroll-down">
+            <p class="scroll-down-value">Tap here</p>
+        </div>
+    </section>
+
+    <header>
+        <div class="logo-and-nav my-container">
+            <div class="logo">
+                <img src="./images/url miniature.png" alt="logo" width="250rem;">
+                <div class="hamburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <nav class="nav-links hidden">
+
+                <ul class="logout-button">
+                    <button id='logout'>Logout</button>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-main">
+            <div class="header-text">
+                <h1>Shorten your link here!</h1>
+                <p>Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+            </div>
+            <div class="header-img">
+                <img src="./images/illustration-working.svg" alt="working">
+            </div>
+        </div>
+    </header>
+    <form action="#">
+        <div class="link-div">
+            <input id="link" type="text" aria-label="linkInput" placeholder="Shorten a link here..." required>
+            <button type="submit" id='shortenLink'>Shorten It!</button>
+        </div>
+    </form>
+    <main>
+        <div class="loading-div"></div>
+        <div class="result"></div>
+
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <img src="profile.jpg" alt="profile picture" class="image--cover">
+        </div>
+
+        <div id="footerDiv" class="my-container">
+            <div class="timeline">
+                <div class="container left" data-aos="fade-right">
+                    <div class="content">
+                        <h2>About Project</h2>
+                        <p>
+                            Urlminiature, Here you can shorten your long and big url to small and compact size
+                            which you can share easily with others.
+                            Get results fastly and effectively.
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="container right" data-aos="zoom-in">
+                    <div class="content">
+                        <h2>Technology Used</h2>
+                        <p>
+                            The technology stack that is being used in this project are HTML, CSS, and JavaScript
+                            and i also implemented firebase authentication in this for Login and Sign-Up.
+                            I also lightweight libraries of JavaScript such as Aos.js for animation and jquery cdns.
+                        </p>
+                    </div>
+                </div>
+                <div class="container left" data-aos="zoom-in">
+                    <div class="content">
+                        <h2>API</h2>
+                        <p>
+                           I had used the API for the purpose of shorting the big URLs
+                           into the small compact URLs. 
+                           Here is the Link mentioned of the api documentation.<br><br>
+                           <a href="https://shrtco.de/" target="_blank">click here!</a> 
+                        </p>
+                    </div>
+                </div>
+                <div class="container right" data-aos="fade-left">
+                    <div class="content">
+                        <h2>Github</h2>
+                        <p>
+                            Here you can check the source code for the project on the Github
+                            and for the the feedback you can always reach me out at my email address
+                            <b>iamvermajayant@gmail.com</b> and the github repository URL is: 
+                            <a href="https://github.com/iamvermajayant/urlminiature" target="_blank">Click here!</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="attribution">
+        </div>
+    </footer>
+    <hr>
+    <footer>
+        <div class="nav-footer">
+            <div class="social-icons">
+                <!-- <span Class="social-icon5">Connect Here</span> -->
+                <div class="social-icon1"><a href="https://www.linkedin.com/in/jayant-verma-13062001/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:36px; color: white" ></a></i></div>
+                <div class="social-icon2"><a href="https://twitter.com/iamjayant_verma" target="_blank"><i class="fa fa-twitter" style="font-size:36px; color: white"></i></a></div>
+                <div class="social-icon3"><a href="https://github.com/iamvermajayant" target="_blank"><i class="fa fa-github" style="font-size:36px; color: white"></i></a></div>
+                <div class="social-icon4"><a href="https://www.instagram.com/jayantverma.js/" target="_blank"><i class="fa fa-instagram" style="font-size:36px; color:white"></i></a></div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="section.js"></script>
+    <script src='./app.js'></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+            offset: 70,
+        });
+    </script>
+
+
+</body>
+
+</html>
